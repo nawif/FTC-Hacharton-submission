@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/RelativeLayout1"
+    tools:context="com.arrawdah.roadtoquran.ReaderImages"
+    android:background="@android:color/darker_gray">
+
+
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/webReaderShare"
+        android:layout_alignTop="@+id/viewPagerHtml"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/linearLayout_ReaderBottom"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/viewPagerHtml"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linearLayout_ReaderTop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/linearLayout_ReaderBottom">
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:id="@+id/linearLayout_ReaderTop"
+        android:background="@color/colorAccent"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:gravity="center_vertical|left"
+            android:layout_marginLeft="10dp">
+
+            <Button
+                android:layout_width="15dp"
+                android:layout_height="25dp"
+                android:id="@+id/BtnThumbsBookMark"
+                android:gravity="center"
+                android:background="@drawable/bookmark"
+                android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center"
+            android:layout_marginLeft="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/BtnFontMinus"
+                android:gravity="center"
+                android:text="A-"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/transparent"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/BtnFontPlus"
+                android:gravity="center"
+                android:text="A+"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/transparent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="10dp">
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/BtnShare"
+                android:gravity="center"
+                android:background="@drawable/share_image"
+                android:layout_marginRight="20dp"/>
+            <Button
+                android:layout_width="15dp"
+                android:layout_height="25dp"
+                android:id="@+id/BtnFav"
+                android:background="@drawable/reader_mark"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout_ReaderBottom"
+        android:background="#f0f0f0">
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:max="120"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

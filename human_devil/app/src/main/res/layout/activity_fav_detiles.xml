@@ -1,0 +1,135 @@
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:weightSum="2">
+
+        <WebView
+            android:layout_width="231dp"
+            android:layout_height="match_parent"
+            android:id="@+id/webView1"
+            android:layout_gravity="left|top"
+            android:layout_weight="1.89" />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:id="@+id/viewlineDwon"
+            android:background="#506700"
+            />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="98dp"
+                android:layout_marginTop="90dp"
+
+                android:layout_height="match_parent"
+                android:layout_gravity="right|top">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:id="@+id/buttonfav1"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:textSize="50dp"
+                    android:textColor="@drawable/state_button"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="تكبير"
+                    android:id="@+id/textViewFav3"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textColor="#506700"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="☆"
+                    android:id="@+id/buttonfav2"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:textSize="50dp"
+                    android:textColor="@drawable/state_button"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="المفضلة"
+                    android:id="@+id/textViewFav4"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textColor="#506700"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="➦"
+                    android:id="@+id/buttonfav3"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:textSize="50dp"
+                    android:textColor="@drawable/state_button"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="مشاركة"
+                    android:id="@+id/textViewFav5"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textColor="#506700"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:id="@+id/buttonfav4"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:textSize="30dp"
+                    android:textColor="@drawable/state_button"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="تصغير"
+                    android:id="@+id/textViewFav6"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textColor="#506700"
+                    />
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">استمتع بحياتك</string>
+    <string name="app_name_with_index">PdfRendererBasic (%1$d/%2$d)</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_reader">استمتع بحياتك</string>
+    <string name="title_activity_test">استمتع بحياتك</string>
+    <string name="title_activity_html_reader">استمتع بحياتك</string>
+    <string name="view">استمتع بحياتك</string>
+    <string name="previous">استمتع بحياتك</string>
+    <string name="next">استمتع بحياتك</string>
+    <string name="title_activity_reader2">استمتع بحياتك</string>
+    <string name="title_activity_my_pdf_viewer">استمتع بحياتك</string>
+    <string name="title_activity_reader_images">استمتع بحياتك</string>
+    <string name="title_activity_gallery_images">استمتع بحياتك</string>
+
+    <string name="title_activity_favorite_gallery">استمتع بحياتك</string>
+    <string name="title_activity_index_book">استمتع بحياتك</string>
+    <string name="title_activity_info_app">استمتع بحياتك</string>
+    <string name="title_activity_reader_html">استمتع بحياتك</string>
+
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.com.merath.com.com.merath.ReaderActivity"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:background="@color/colorLight">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/share_btn"
+                android:layout_marginRight="10sp"
+                />
+
+            <Button
+                android:id="@+id/btnFav"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_toLeftOf="@+id/btnShare"
+                android:layout_toStartOf="@+id/btnShare"
+                android:layout_centerVertical="true"
+                android:background="@drawable/fav_btn"
+                android:layout_marginRight="10sp"
+
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:id="@+id/titleReader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginLeft="15sp"
+        android:gravity="center"
+        android:textColor="@color/colorLight"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:layout_below="@+id/titleReader"
+        android:id="@+id/imageView" />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:id="@+id/rawiReader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/titleReader"
+        android:layout_alignRight="@+id/titleReader"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="15sp"
+        android:paddingTop="10sp"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp"
+        android:paddingBottom="12sp"
+        android:background="@drawable/sub_title"
+        android:text="TextView"
+        android:textColor="@color/colorLight"/>
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:id="@+id/bodyReader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:background="@drawable/body_text"
+        android:text="fdfdfdfdfdfdfdf"
+        android:textColor="@color/colorLight"
+        android:layout_alignRight="@+id/rawiReader"
+        android:layout_alignEnd="@+id/rawiReader"
+        android:layout_alignLeft="@+id/titleReader"
+        android:layout_alignStart="@+id/titleReader"
+        android:layout_above="@+id/sourceReader"
+        android:layout_below="@+id/rawiReader"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="15sp"
+        android:gravity="center|top"
+        android:scrollbars = "vertical"
+        />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:id="@+id/sourceReader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15sp"
+        android:paddingRight="15sp"
+        android:paddingLeft="15sp"
+        android:paddingBottom="17sp"
+        android:background="@drawable/sub_title"
+        android:text="dd"
+        android:textColor="@color/colorLight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/rawiReader"
+        android:layout_alignEnd="@+id/rawiReader"
+        android:layout_marginBottom="20sp"
+        android:layout_marginLeft="180sp"/>
+
+
+</RelativeLayout>
